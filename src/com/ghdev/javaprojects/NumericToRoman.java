@@ -37,7 +37,6 @@ public class NumericToRoman {
 		if (num >= 1000) {
 			tmpBuilder.append(replaceToRomans((int) (num / Math.pow(10, pow - 1)), USEFUL_ROMANS[6], null, null));
 		} else if (num >= 100) {
-			System.out.println((int) Math.pow(10, pow - 1));
 			tmpBuilder.append(replaceToRomans(num / (int) Math.pow(10, pow - 1), USEFUL_ROMANS[4], USEFUL_ROMANS[5],
 					USEFUL_ROMANS[6]));
 		} else if (num >= 10) {
